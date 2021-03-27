@@ -250,32 +250,32 @@ import java.util.Locale;
 //}
 
 // code01-09 キャラクター状態1人分の表示のためのコード
-//public class Main {
-//    public static void main(String[] args) {
-//        Hero hero = new Hero();
-//        hero.name = "ミナト";
-//        hero.job = "勇者";
-//        hero.gold = 100000;
-//        // 組み立てる文字列の雛形を指定する書式指定文字列と、プレースホルダー(%)に第2引数以降で指定した値を流し込む
-//        // プレースホルダーの書式: % 修飾 桁 型
-//        // 修飾 ,:3桁事にカンマをいれる 0:空き領域を0埋め -:左寄せ(数字) +:符号を強制表示
-//        // 桁 表示桁数を指定する n.m形式で指定した場合、全体n桁、小数点以下m桁での表示となる
-//        // 型 d:整数 s:文字列 f:小数 b:真偽値
-//        final String FORMAT = "%8s %6s 所持金%,5d";
-//        String s = String.format(FORMAT, hero.getName(), hero.getJob(), hero.getGold());
-//        System.out.println(s);
-//        // 上記2行を1行のコードで済ませるにはSystem.out.printf() メソッドを用いる
-//        // System.out.printf(FORMAT, hero.getName(), hero.getJob(), hero.getGold()); // 実行結果:     ミナト     勇者 所持金  100
-//
-//        System.out.printf("製品番号%s-%02d", "SJV", 3); // 実行結果: 製品番号SJV-03
-//
-//        // format()やprintf()メソッドは可変長引数で宣言される
-//        // public static format(String format, Object... args)
-//        // 引数リストの型の後ろに...を付けるとその型の引数をいくつでも渡せるが、
-//        // ひとつのメソッドの宣言にあたり...が使えるのは1回だけ
-//        // 可変長引数として渡された値は配列として取り出せる
-//    }
-//}
+public class Main {
+    public static void main(String[] args) {
+        Hero hero = new Hero();
+        hero.name = "ミナト";
+        hero.job = "勇者";
+        hero.gold = 100000;
+        // 組み立てる文字列の雛形を指定する書式指定文字列と、プレースホルダー(%)に第2引数以降で指定した値を流し込む
+        // プレースホルダーの書式: % 修飾 桁 型
+        // 修飾 ,:3桁事にカンマをいれる 0:空き領域を0埋め -:左寄せ(数字) +:符号を強制表示
+        // 桁 表示桁数を指定する n.m形式で指定した場合、全体n桁、小数点以下m桁での表示となる
+        // 型 d:整数 s:文字列 f:小数 b:真偽値
+        final String FORMAT = "%8s %6s 所持金%,5d";
+        String s = String.format(FORMAT, hero.getName(), hero.getJob(), hero.getGold());
+        System.out.println(s);
+        // 上記2行を1行のコードで済ませるにはSystem.out.printf() メソッドを用いる
+        // System.out.printf(FORMAT, hero.getName(), hero.getJob(), hero.getGold()); // 実行結果:     ミナト     勇者 所持金  100
+
+        System.out.printf("製品番号%s-%02d", "SJV", 3); // 実行結果: 製品番号SJV-03
+
+        // format()やprintf()メソッドは可変長引数で宣言される
+        // public static format(String format, Object... args)
+        // 引数リストの型の後ろに...を付けるとその型の引数をいくつでも渡せるが、
+        // ひとつのメソッドの宣言にあたり...が使えるのは1回だけ
+        // 可変長引数として渡された値は配列として取り出せる
+    }
+}
 
 // practice01-01
 //public class Main {
@@ -292,19 +292,19 @@ import java.util.Locale;
 //}
 
 // practice01-02
-public class Main {
-
-    String concatPath(String folder, String file) {
-        if ( !folder.endsWith("\\") ) {
-            folder += "\\";
-        }
-        return folder + file;
-    }
-//    public static void main(String[] args) {
+//public class Main {
 //
+//    String concatPath(String folder, String file) {
+//        if ( !folder.endsWith("\\") ) {
+//            folder += "\\";
+//        }
+//        return folder + file;
 //    }
-
-}
+////    public static void main(String[] args) {
+////
+////    }
+//
+//}
 
 // practice01-03
 // 1: .*
